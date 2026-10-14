@@ -94,12 +94,12 @@ export const postLogout = (req, res, next) => {
 
 export const postAddHome = async (req, res, next) => {
   const { houseName, price, location } = req.body;
-  const file = req.file ? req.file.filename : "no-image.jpg";
+  const file = req.file ? req.file.path : "no-image.jpg"; // .filename ki jagah .path
 
   const home = new Home({ houseName, price, location, file });
   await home.save();
 
-  res.render("homeadded", { title: "home added successfully" });
+  res.render("homeadded", { title: "Home added successfully" });
 };
 
 export const getHomes = async (req, res, next) => {
