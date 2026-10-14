@@ -1,5 +1,5 @@
-import { Home } from "../modles/home.js";
-import User from "../modles/user.js";
+import { Home } from "../models/home.js";
+import User from "../models/user.js";
 import crypto from "crypto";
 import path from "path";
 import { fileURLToPath } from "url";
