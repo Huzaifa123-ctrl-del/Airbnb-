@@ -48,10 +48,20 @@ app.use(
 
 app.use(error);
 const PORT = 3000;
-mongoConnect(() => {
-  app.listen(PORT, () => {
-    console.log(
-      `Server running on http://localhost:${PORT} and MongoDB connected`,
-    );
+
+// Vercel ke liye export zaroori hai
+export default app;
+
+// Local me chalane ke liye
+if (process.env.NODE_ENV !== 'production') {
+  mongoConnect(() => {
+    app.listen(PORT, () => {
+      console.log(`Server running on http://localhost:${PORT}`);
+    });
   });
-});
+} else {
+  // Vercel pe sirf connect karo, listen nahi
+  mongoConnect(() => {
+    console.log("MongoDB connected on Vercel");
+  });
+}
