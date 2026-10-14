@@ -1,5 +1,15 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/airbnb.js" }
+  "version": 2,
+  "builds": [
+    {
+      "src": "airbnb.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "airbnb.js"
+    }
   ]
 }
