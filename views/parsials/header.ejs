@@ -1,0 +1,18 @@
+<header id="hero">
+  <h2>Welcome to airbnb</h2>
+
+
+  <% if(!isLoggedIn) {%>
+    <ul>
+      <li>
+        <a href="/auth/login" class="login">Login</a>
+        <a href="/auth/signup" class="login">SignUp</a>
+        <% } else { %>
+          <a href="/host/add-home" class="addHome">Add Home</a>
+      </li>
+    </ul>
+    <form action="/auth/logout" method="POST">
+      <input type="submit" value="Logout" class="logout">
+    </form>
+    <% } %>
+</header>

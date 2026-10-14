@@ -1,0 +1,487 @@
+header {
+  background: white;
+  padding: 15px 30px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-between;
+}
+li {
+  list-style: none;
+}
+.login {
+  color: #ff385c;
+  text-decoration: none;
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding-left: 30px;
+}
+.addHome {
+  background-color: #ff385c;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 11px;
+  border-radius: 1.5rem;
+  text-decoration: none;
+  font-weight: 700;
+  border: none;
+  margin-left: 653px;
+  box-shadow: 0 4px 10px rgba(255, 56, 92, 0.3);
+}
+.addHome:hover {
+  opacity: 0.85;
+}
+.login:hover {
+  opacity: 0.7;
+
+  border-radius: 1rem;
+}
+.logout {
+  background-color: #ff385c;
+  color: white;
+  font-size: 1rem;
+  border-radius: 1.3rem;
+  padding: 12px;
+  border: none;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(255, 56, 92, 0.3);
+  cursor: pointer;
+}
+.logout:hover {
+  opacity: 0.85;
+}
+#hero {
+  background: white;
+  padding: 15px 30px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  color: #ff385c;
+  font-size: 29px;
+  font-weight: bold;
+}
+
+/* Add Home Button */
+.add-home-btn {
+  background: #ff385c;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Card List */
+.home-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+.home-card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f7f7f7;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 20px 30px;
+  border-radius: 12px;
+  margin: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+.page-header h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Register Form Styling */
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+}
+.form-card {
+  background: white;
+  width: 100%;
+  max-width: 450px;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+.form-card .card-icon {
+  margin: 0 auto 15px auto;
+}
+.form-card h1 {
+  margin: 0 0 5px 0;
+  font-size: 24px;
+}
+.form-subtitle {
+  color: #717171;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.form-card form {
+  text-align: left;
+}
+.form-card label {
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+}
+.form-card input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+.form-card input:focus {
+  border-color: #222;
+}
+
+.btn-submit {
+  width: 100%;
+  background: #ff385c;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn-submit:hover {
+  background: #e31c5f;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #717171;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.success-card {
+  text-align: center;
+}
+.success-icon {
+  background: #dcfce7;
+  color: #16a34a;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin: 0 auto 20px auto;
+}
+.success-btn {
+  display: block;
+  text-decoration: none;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.error-card {
+  text-align: center;
+}
+.error-icon {
+  background: #ffe8ec;
+  color: #ff385c;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 800;
+  margin: 0 auto 20px auto;
+}
+.error-btn {
+  display: block;
+  text-decoration: none;
+  margin-top: 20px;
+  text-align: center;
+  background: #222222;
+}
+.error-btn:hover {
+  background: #000;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+}
+
+/* Header */
+.main-header {
+  background: #fff;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+}
+.logo {
+  color: #ff385c;
+  font-size: 24px;
+  font-weight: 700;
+}
+.main-header nav a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 20px;
+  font-weight: 500;
+}
+.main-header nav a:hover {
+  color: #ff385c;
+}
+
+/* Form Wrapper */
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+  padding: 20px;
+}
+
+.form-card {
+  background: white;
+  padding: 40px 35px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 430px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.card-icon {
+  width: 285px;
+  height: 203px;
+  background: #fff1f2;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+.card-icon img {
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+}
+.form-title {
+  font-size: 28px;
+  margin: 10px 0 5px 0;
+  color: #222;
+}
+.form-subtitle {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+/* Inputs */
+.input-group {
+  margin-bottom: 12px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1.5px solid #e5e5e5;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+.form-input:focus {
+  border-color: #ff385c;
+  box-shadow: 0 0 0 3px rgba(255, 56, 92, 0.1);
+}
+
+/* Radio Button */
+.radio-group {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 15px 0;
+}
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Button */
+.btn-submit {
+  width: 100%;
+  padding: 13px;
+  background: linear-gradient(to right, #ff385c, #e31c5f);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+.btn-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 15px rgba(255, 56, 92, 0.3);
+}
+
+.login-link {
+  margin-top: 20px;
+  font-size: 14px;
+}
+.login-link a {
+  color: #ff385c;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* MAIN LAYOUT */
+.container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.top-bar {
+  background: #fff;
+  padding: 18px 25px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+}
+.top-bar h2 {
+  font-size: 20px;
+}
+
+.btn-add,
+.btn-logout {
+  background: #ff385c;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* GRID */
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  justify-content: center;
+}
+
+.home-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  transition: 0.3s;
+}
+.home-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.home-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background: #eee;
+}
+
+.home-info {
+  padding: 15px 18px;
+}
+.home-info h3 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+.price {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.btn-details {
+  display: block;
+  text-align: center;
+  background: #222;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+.btn-details:hover {
+  background: #000;
+}

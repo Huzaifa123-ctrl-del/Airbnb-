@@ -1,0 +1,28 @@
+<%-include('parsials/head.ejs')%>
+
+    <body>
+        <header>
+            <h1>Here are Our register Home</h1>
+        </header>
+
+        <main class="form-wrapper">
+            <div class="form-card">
+                <div class="card-icon">🏠</div>
+                <h1>Register your Home</h1>
+                <p class="form-subtitle">Add your property to our listing</p>
+
+                <form action="/host/add-home" method="POST" enctype="multipart/form-data">
+                    <label>House Name</label>
+                    <input type="text" placeholder="Enter the name of your house" name="houseName" required>
+                    <input type="number" name="price" placeholder="Price">
+                    <input type="text" name="location" placeholder="Location">
+                    <input type="file" name="file" accept="image/*">
+                    <button type="submit" class="btn-submit">Submit</button>
+                </form>
+
+                <a href="/" class="back-link">← Back to Homes</a>
+            </div>
+        </main>
+    </body>
+
+    </html>

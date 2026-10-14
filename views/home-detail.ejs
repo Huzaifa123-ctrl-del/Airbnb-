@@ -1,0 +1,26 @@
+<%-include('parsials/head.ejs')%>
+
+  <body>
+    <header>
+      <h1>Here are Our register Home</h1>
+    </header>
+
+    <main class="form-wrapper">
+      <div class="form-card">
+        <div class="card-icon">
+          <img src="/uploads/<%=home.file%>">
+        </div>
+        <h1>
+          <%= home.houseName %>
+        </h1>
+        <p class="form-subtitle">ID: <%= home.Id %> | $12324 / night</p>
+        <p style="margin-top: 15px;">This is a beautiful home located at a prime location. Perfect for your next stay.
+        </p>
+
+        <a href="/" class="btn-submit success-btn">Back to Homes</a>
+      </div>
+    </main>
+
+  </body>
+
+  </html>
